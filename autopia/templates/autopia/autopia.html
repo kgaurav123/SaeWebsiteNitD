@@ -1,0 +1,57 @@
+{% extends "autopia/header.html" %}
+
+{% block content %}
+
+	{% load static %}
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!-- Page Content -->
+    <div class="container">
+			<div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			</div>
+
+      <!--<div class="row">
+
+        <!--<header class="masthead text-center text-white d-flex">-->
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong><center>Submit the article</center></strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5"> </p>
+				<br>
+			<!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>-->
+          </div>
+        </div>
+      </div>
+	 </div>
+         <!--</header>-->
+
+	<div class="offset-3 col-md-6">
+		<form method='POST'>
+		{% csrf_token %}
+			<div class="form-group">
+				{% for field in form %}
+					{{field}}
+					<br>
+					<br>
+				{% endfor %}
+			</div>
+			<div class="col-lg-8 mx-auto text-center">
+				<button class="btn btn-primary btn-xl js-scroll-trigger" type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+{% endblock %}

@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SAE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'index/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'index/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'index/css/agency.css' %}" rel="stylesheet">
+    <style>
+        @media (min-width: 992px) {
+            #mainNav {
+                background-color: transparent;
+            }
+        }
+        
+        @media screen and (min-width:250px) and (max-width:485px) {
+            #homeimg {
+                height: 400px;
+                padding-top: 117px;
+            }
+            #def {
+                height: 225px;
+                width: 350px;
+            }
+        }
+        
+        @media screen and (min-width:486px) and (max-width:770px) {
+            #homeimg {
+                height: 625px;
+                padding-top: 120px;
+                padding-left: 35px;
+            }
+            #def {
+                height: 130px;
+                width: 225px;
+            }
+        }
+        
+        @media (min-width: 777px) {
+            .navbar {
+                height: 75px;
+            }
+            #logimg {
+                margin-left: -25px;
+            }
+            #mainNav {
+                background-color: #212529;
+            }
+            #homeimg {
+                height: 717px;
+            }
+            #def {
+                height: 190px;
+                width: 300px;
+            }
+        }
+        /*@media screen and (min-width:250px) and (max-width:500px)
+    {
+        #homeimg
+        {
+            height: 400px;
+            padding-top: 117px;
+        }
+    }
+   @media screen and (min-width:510px)
+    {
+        #homeimg
+        {
+            height: 717px;
+        }
+         #mainNav
+         {
+             background-color: #212529;
+         }
+    }
+      @media (min-width: 600px)
+          {
+          .navbar
+          {
+              height: 75px;
+          }
+              #logimg
+              {
+                  margin-left: -100px;
+              }
+          }
+    */
+    </style>
+</head>
+
+<body id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/"><img src="{% static 'index/img/saelogo.png' %}" width="110px" height="90px" alt="saelogo" id="logimg" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#autopia">Autopia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <br>
+
+    <!-- Footer -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'index/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'index/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'index/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'index/vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'index/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'index/js/agency.min.js' %}"></script>
+
+</body>
+
+</html>
+
+
+{% block content %} {% load static %}
+
+<!-- Portfolio Grid -->
+<section class="bg-light" id="activities">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">EVENTS</h2>
+                <h3 class="section-subheading text-muted">The events organised by our club:</h3>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae2.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>TRANSMISSION</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal1">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">TRANSMISSION</h4>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img src="{% static 'index/img/portfolio/sae3.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>BATTLE OF WATERLOO</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal2">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">BATTLE OF WATERLOO</h4>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>JUNKYARD</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal3">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">JUNKYARD</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br />
+            <br />
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img src="{% static 'index/img/portfolio/sae5.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>APOCALYPSE</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal4">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">APOCALYPSE</h4>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae6.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>ROYAL LEAGUE</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal5">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">ROYAL LEAGUE</h4>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae7.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>ESCAPE THE MINOTAUR</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal6">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">ESCAPE THE MINOTAUR</h4>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <br />
+            <br />
+        </div>
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae8.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>IMPROMPTUS</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal7">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">IMPROMPTUS</h4>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae9.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>CONSILIO</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal8">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">CONSILIO</h4>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae10.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>PACMAN</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal9">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">PACMAN</h4>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae11.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>SDV VEHICLE WORKSHOP</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal10">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">SDV VEHICLE WORKSHOP</h4>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-6  portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{% static 'index/img/portfolio/sae12.jpg' %}" height="190px" width="300px" id="def" alt="">
+                    <div class="overlay">
+                        <h2>GENESIS</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal11">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">GENESIS</h4>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6  portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae13.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>BIDWARS</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal12">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">BIDWARS</h4>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6  portfolio-item">
+                <div class="hovereffect">
+                    <img src="{% static 'index/img/portfolio/sae14.jpg' %}" height="190px" width="300px" id="def" alt="">
+                    <div class="overlay">
+                        <h2>CONQUESTO</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal13">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">CONQUESTO</h4>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6  portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae15.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>AUTOLOCKED</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal14">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">AUTOLOCKED</h4>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6  portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/sae16.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>ELECTRIC CAR SEMINAR</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal15">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">ELECTRIC CAR SEMINAR</h4>
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-fluid" src="{% static 'index/img/portfolio/automania.jpg' %}" id="def" alt="">
+                    <div class="overlay">
+                        <h2>AUTOMANIA</h2>
+                        <a class="info" data-toggle="modal" href="#portfolioModal100">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 style="text-align:center;">AUTOMANIA</h4>
+
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <div class="col-lg-8 mx-auto text-center">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/announcements">Get event updates!</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2 class="text-uppercase">TRANSMISSION</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mx-auto">
+                                <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae2.jpg' %}" alt="">
+                            </div>
+                            <div class="col-lg-4 mx-auto">
+                                <p>“Transmission” presents you a series of challenging and mind-boggling tasks wherein your technical skills are put to test and questioned by experience. Leave no stone unturned in keeping your concepts clean and error-free
+                                    cause that might just be your pitfall. Execute your knowledge and abilities to win over people.
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">BATTLE OF WATERLOO</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae3.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <p>Wage war, overthrow the enemies in your own Pochinki, and conquer them by firing ammunition rounds with your hydraulic arms.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">JUNKYARD</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid" src="{% static 'index/img/portfolio/sae4.jpg' %}" alt="">
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+
+                            <p>Don't let the junk go waste and let the society be more technology-surrounded. In Junkyard, gather your creative ideas and use them to make something useful out of the scrap and like a phoenix, let your innovation rise from
+                                ashes!
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">APOCALYPSE</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae5.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+                            <p>Are you a someone who is interested in building robots? Does your robot have what it takes to survive any deadly obstacle? Then come on down and take on the toughest obstacle course!</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">ROYAL LEAGUE</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae6.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+                            <p>A time will come when the canons would conflict, explosions would break in the sky, the flames would climb higher and the chariots would stand face to face, breaking the forts of the opponents to stand out victorious. Defend
+                                your land, fight on the foreground, streets and hills but never surrender. </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">ESCAPE THE MINOTAUR</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-thumbnail" src="{% static 'index/img/portfolio/sae7.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+                            <p>Do you think your bot is intelligent enough to follow lines, avoid obstacles, solve mazes and make it to the finish line? "Escape the Minotaur" brings you an opportunity to put your bot to test through various levels of challenging
+                                tasks but most importantly, all by itself without any external control. So prepare your algorithm, calibrate your sensors and get ready to be enthralled!</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">IMPROMPTUS</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae8.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+                            <p>Focus your inner entropy to bring out the Einstein in you. This Aavishkar we bring you Impromptus, a one-of-a-kind event which challenges your brain cells to be as random and spontaneous as possible.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">CONSILIO</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae9.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p>Brainstorm, ideate, design, parametrize and create your most extraordinary creation. Consilio is a must try on-spot event for awakening the engineer in you. </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">PACMAN</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae10.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p> SAE India-NIT Durgapur brings to you an event on manually controlled vehicle where you will be taught to make a manually controlled vehicle and compete with others to win a game of pacman. </p>
+
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+        										<i class="fas fa-times"></i>
+        										Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">SDV WORKSHOP</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae11.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p>Imagine what road-trips would be like if you don't have to toss every hour deciding on who will take up the driver seat or googling the roads and lanes to take at every turn ! Sounds great, right ?! Well, now we have such technologies
+                                with us to turn our imagination into reality. We, IEEE SB and SAE India have brought to you The Self-Driving Vehicle Workshop in which you will be guided on how to make your very own model of an automated vehicle. </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">GENESIS</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae12.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p>A different robotics event wherein the participants will experience the biggest pressure test: to defeat the clock. Bots race against time to overcome all the hurdles along their way to victory. Cars driven by balloons and
+                                bots made on spot are some of the many things the participants have to brainstorm and construct to emerge as the Champions, keeping in mind competition imposed by their opponents and the time crunch, and a smart marking
+                                scheme. A definite must-try event for all the robotics enthusiasts. </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+              <i class="fas fa-times"></i>
+              Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">BIDWARS</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae13.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p>Have you ever dreamt of owning an automobile company of your own and designing your own car and earning huge profits out of your venture? Well this event might just be the perfect attempt to test your abilities as an Autocrat.
+                                Ace the game of bidding to shield yourself and your car from your opponents with whatever remains in your pocket, without making a hole in it. Be wiser at this game of bidding and you can ride the car of your dreams.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+            <i class="fas fa-times"></i>
+            Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">CONQUESTO</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae14.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p>This event is a platform for the participants to channel their latent business acumen and combat challenges in the industrial world. For the first time engineers-in-making are given a chance to setup their own companies,as
+                                they bid their way to attain the force and power to execute their ideas and convince business tycoons to fund their attempts. Real time problems in the industrial world would test the practicality and feasibility of their
+                                ideas. All-in-all this will surely be an event which keeps the contestants at the edge-of-their-seats throughout as they battle their way through the cut-throat competition of the industrial giants. Prizes worth 10k up
+                                for grabs.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+          <i class="fas fa-times"></i>
+          Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">AUTOLOCKED</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae15.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p>Living in today’s world of technological advancement, this event is designed to apply your theoretical knowledge in practical field. This event puts to test the ability to see through riddles and arrange their analysis to unravel
+                                the answer. And finally, a scope for all automobile enthusiasts to design their own car models and zoom their way to the finishing line, combating the time limit imposed and the lack of resources at their disposal. </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+          <i class="fas fa-times"></i>
+          Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">ELECTRIC CAR SEMINAR</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/sae16.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+
+
+                            <p> SAE - NIT Durgapur in association with project SR is organising an electric car seminar. So buckle up and be there for a hands on experience on the new world of Electric Cars. </p>
+
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal100" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">AUTOMANIA</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+
+                            <img class="img-fluid d-block mx-auto" src="{% static 'index/img/portfolio/automania.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <p>Still having the dreams of making your own Lamborghini Murcielago ?! If yes, then Automania gives you a chance to make your own car with all the best features in it. Using your technical knowledge alongwith a sense of designing
+                                a car compete against others and let your car win the game for you !</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Sae-NIT Durgapur 2018</span>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/SAENITD/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:sae.nitdgp1@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

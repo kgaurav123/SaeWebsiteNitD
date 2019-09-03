@@ -1,0 +1,10 @@
+sae_website/__pycache__/
+sae_website/migrations/__pycache__/
+index/__pycache__/
+index/migrations/__pycache__/
+autopia/__pycache__/
+autopia/migrations/__pycache__/
+contact/__pycache__/
+contact/migrations/__pycache__/
+announcements/__pycache__/
+announcements/migrations/__pycache__/

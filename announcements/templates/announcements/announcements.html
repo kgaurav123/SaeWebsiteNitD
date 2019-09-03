@@ -1,0 +1,122 @@
+{% extends "announcements/header.html" %}
+
+{% block content %}
+
+	{% load static %}
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- Page Content -->
+    <div class="container">
+			<div class="container">
+				<div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				</div>
+
+      <!--<div class="row">
+
+        <!--<header class="masthead text-center text-white d-flex">-->
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong><center>Announcements</center></strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5"> </p>
+				<br>
+			<!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>-->
+          </div>
+        </div>
+      </div>
+         <!--</header>-->
+
+		  {% for post in posts %}
+
+		  <!-- Blog Post -->
+          <div class="card mb-4">
+            <!--<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">-->
+            <div class="card-body">
+              <h2 class="card-title"><a href="/announcements/{{post.id}}"><strong> {{post.title|safe|linebreaks}} </strong></a></h2>
+              <p class="card-text"> {{post.body|safe|linebreaks}} </p>
+			  <br>
+			  {% if post.image %}
+			  <center><img src={{post.image.url}} width="240"/></center>
+			  <br>
+			  {% endif %}
+
+              <!--<a href="#" class="btn btn-primary">Read More &rarr;</a>-->
+            </div>
+            <div class="card-footer text-muted">
+              Posted on {{post.date|date:"Y-m-d"}}
+            </div>
+          </div>
+
+		  {% endfor %}
+
+		  <!-- Pagination -->
+		<div class="pagination">
+		  <span class="step-links">
+
+			{% if posts.has_previous %}
+				<a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+				<a class="btn btn-outline-info mb-4" href="?page={{posts.previous_page_number}}">Previous</a>
+			{% endif %}
+
+			{% for num in posts.paginator.page_range %}
+				{% if posts.number == num %}
+				 <span class="current">
+				  <a class="btn btn-outline-info mb-4" href="?page={{num}}">{{num}}</a>
+				 </span>
+				{% elif num > posts.number|add:'-3' and num < posts.number|add:'3' %}
+				  <a class="btn btn-outline-info mb-4" href="?page={{num}}">{{num}}</a>
+				{% endif %}
+			{% endfor %}
+
+			{% if posts.has_next %}
+				<a class="btn btn-outline-info mb-4" href="?page={{posts.next_page_number}}">Next</a>
+				<a class="btn btn-outline-info mb-4" href="?page={{posts.paginator.num_pages}}">Last</a>
+			{% endif %}
+
+		  </span>
+		</div>
+          <!--<ul class="pagination justify-content-center mb-4">
+            <!--<li class="page-item">
+              <a class="page-link" href="#">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Newer &rarr;</a>
+            </li>
+          </ul>-->
+
+    </div>
+      <!--</div>
+      <!-- /.row
+	</div>
+    <!-- /.container -->
+
+	<br>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'announcements/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'announcements/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+	<!--<img src="{% static 'announcements/img/bg.jpg' %}" style="max-width: 100%; height: auto;" />
+	{% for post in object_list %}
+		<h5>{{post.date|date:"Y-m-d"}}</h5>
+		<h4><a href="/announcements/{{post.id}}"> {{post.title}} </a> </h4>
+	{% endfor %}-->
+
+{% endblock %}

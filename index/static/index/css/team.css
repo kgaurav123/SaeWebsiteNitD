@@ -1,0 +1,37 @@
+ .team-des {
+  text-align: center;
+  margin: 10px 0px;
+}
+.team-des img{
+  width: 160px;
+  height: 160px;
+  border-radius: 35px;
+  -webkit-transition: border-radius 300ms;
+  -moz-transition: border-radius 300ms;
+  -ms-transition: border-radius 300ms;
+  -o-transition: border-radius 300ms;
+  transition: border-radius 300ms;
+}
+.team-des img:hover {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  transition-duration: 300ms;
+  animation: roll 1000ms;
+  animation-delay: 300ms;
+}
+.team-des a{
+  padding: 0 0.25rem;
+}
+.team-s {
+  text-align: center;
+}
+.team-s img {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  -webkit-transition: border-radius 200ms;
+  -moz-transition: border-radius 200ms;
+  -ms-transition: border-radius 200ms;
+  -o-transition: border-radius 200ms;
+  transition: border-radius 200ms;

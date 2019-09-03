@@ -1,0 +1,610 @@
+
+<!--All Team Members -->
+<!--jnijnfnrcgcnngfen-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	{% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SAE</title>
+
+   <!-- Custom fonts for this template -->
+
+
+    <!-- Bootstrap core CSS -->
+
+      <link href="{% static 'index/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'index/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+      <!--<link href="{% static 'index/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <link href="{% static 'index/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+-->
+    <!-- Custom styles for this template -->
+    <link href="{% static 'index/css/agency.css' %}" rel="stylesheet">
+ <!--   <link href="{% static 'index/css/tstyle.css' %}" rel="stylesheet">-->
+      <style>
+
+      h1
+          {
+              text-align: center;
+          }
+     @media (min-width: 992px) {
+			#mainNav {
+			  background-color: transparent;
+			}
+		}
+    @media (min-width: 777px)
+     {
+      .navbar
+       {
+         height: 75px;
+       }
+      #logimg
+       {
+         margin-left: -25px;
+       }
+     #mainNav
+       {
+         background-color: #212529;
+       }
+
+
+     }
+
+      body{
+	margin: 0;
+	padding: 0;
+overflow-x: hidden;
+}
+
+.wrapper{
+
+	width: 100vw;
+
+	margin: 0;
+	padding: 0;
+}
+/*
+.container{
+min-height: 120vh;
+	width: 100vw;
+	overflow: hidden;
+background-image: linear-gradient(30deg,#000,#666,#999);
+*/
+    /*
+}
+.container::before{
+	content: '';
+	height: 60vw;
+	width: 60vw;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left:-15%;
+}
+*//*
+.container::after{
+	content: '';
+	height: 30vw;
+	width: 30vw;
+	background-color: rgba(250,250,250,0.6);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 85%;
+
+}*/
+/*
+.page{
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,0.2);
+	opacity: 0;
+	z-index: 1;
+	transition:all 0.8s ease-in-out;
+}
+*/
+.final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.card{
+	width: 20vh;
+	height: 20vh;
+	background-color: seagreen;
+	border-radius: ;
+
+}
+
+.active{
+opacity: 1;
+}
+
+.button-container{
+
+padding-top: 20px;
+padding-left: 10px;
+	height: 15vh;
+	width: 100%;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+
+	background-color: rgba(100,100,0,0.5);
+}
+
+.btn{
+ cursor: pointer;
+	height: 10vh;
+	width: 10vw;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	padding-top: 20px;
+}
+
+
+
+.pre-final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+}
+.pre-pre-final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.animation{
+animation: moveout 1.5s 1;
+}
+/*
+@keyframes moveout{
+	0%{
+
+	}
+	50%{
+
+	}
+
+	100%{
+		 transform: perspective(200px) rotateY(360deg);
+	}
+}
+*/
+.animation-out{
+animation: moveouter 1.5s 1;
+}
+
+@keyframes moveouter{
+	0%{
+
+	}
+
+
+	100%{
+		 transform: translate(-500%,-10%);
+	}
+}
+.btn-active{
+color: #49f;
+}
+.baja{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+
+
+@media (min-width: 967px) and (max-width: 1167px){
+	.container{
+    min-height: 230vh;
+	}
+
+	.final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.pre-final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.pre-pre-final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.baja{
+	  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+}
+
+@media (min-width: 667px) and (max-width: 967px){
+  /*.container{
+    min-height: 230vh;
+  }*/
+  .final{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.pre-final{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.pre-pre-final{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.baja{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+}
+
+@media (min-width: 168px) and (max-width: 667px){
+	/*.container{
+    min-height: 230vh;
+	}*/
+	.final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.pre-final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.pre-pre-final{
+	  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.baja{
+	  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+}
+.card img
+{
+height: 100%;
+width: 100%;
+}
+
+      </style>
+
+  </head>
+
+
+
+
+  <body id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/"><img src="{% static 'index/img/saelogo.png' %}" width="90px" height="70px" alt="saelogo" /></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#activities">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#autopia">Autopia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!---------------->
+<br><br><br><br><br>
+
+  <div id="wrapper">
+          <div id='title'>
+				<h1>All Team Members</h1><br>
+          </div>
+   <!--   <div class="row">
+    <div class="col-sm-12 text-center">
+        <button class="btn btn-primary btn-md">button</button>
+        <button class="btn btn-danger btn-md">button</button>
+        <button class="btn btn-primary btn-md">button</button>
+        <button class="btn btn-danger btn-md">button</button>
+     </div>
+    </div> -->
+         <!--
+ <div class="btn-group btn-group-justified">
+  <div class="btn btn-1">Office Bearers</div>
+  <div class="btn btn-2">Senior Fest Co-Ordinators</div>
+  <div class="btn btn-3">Junior Fest Co-Ordinators</div>
+  <div class="btn btn-4">Baja Members</div>
+ </div>
+
+ </div>
+      -->
+
+     <div class="button-container">
+<div class="btn final-btn btn-active" style="color: blue;">Office Bearers</div>
+<div class="btn prefinal-btn" style="color: blue;">Senior Fest Co-Ordinators</div>
+<div class="btn preprefinal-btn" style="color: blue;">Junior Fest Co-Ordinators</div>
+<div class="btn baja-btn" style="color: blue;">Baja Members</div>
+</div>
+      <div class="container">
+
+		<div class="page final  active">
+			<div class="card one"><img src="{% static 'index/img/team/skg.jpg' %}"></div>
+			<div class="card two"><img src="{% static 'index/img/team/anand.jpg' %}"></div>
+			<div class="card three"><img src="{% static 'index/img/team/divya.jpg' %}"></div>
+			<div class="card four"><img src="{% static 'index/img/team/suvit.jpg' %}"></div>
+			<div class="card five"><img src="{% static 'index/img/team/wasiq.jpg' %}"></div>
+			<div class="card six"><img src="{% static 'index/img/team/amrit.jpg' %}"></div>
+			<div class="card seven"><img src="{% static 'index/img/team/amrit.jpg' %}"></div>
+			<div class="card eight"><img src="{% static 'index/img/team/vinay.jpg' %}"></div>
+			<div class="card nine"><img src="{% static 'index/img/team/oindrilla.jpg' %}"></div>
+			<div class="card ten"><img src="{% static 'index/img/team/pavan.jpg' %}"></div>
+			<div class="card eleven"><img src="{% static 'index/img/team/aniq.jpg' %}"></div>
+			<div class="card eight"><img src="{% static 'index/img/team/shristy.jpg' %}"></div>
+			<div class="card nine"><img src="{% static 'index/img/team/anish.jpg' %}"></div>
+			<div class="card ten"><img src="{% static 'index/img/team/sunidhi.jpg' %}"></div>
+			<div class="card eleven"><img src="{% static 'index/img/team/niloy.jpg' %}"></div>
+			<div class="card twelve"><img src="{% static 'index/img/team/somdas.jpg' %}"></div>
+		</div>
+		<div class="page pre-final ">
+			  <div class="card one"><img src="{% static 'index/img/team/shrish.jpg' %}"></div>
+			  <div class="card two"><img src="{% static 'index/img/team/partha.jpg' %}"></div>
+			  <div class="card three"><img src="{% static 'index/img/team/shashank.jpg' %}"></div>
+			  <div class="card four"><img src="{% static 'index/img/team/dibyadipta.jpg' %}"></div>
+			  <div class="card five"><img src="{% static 'index/img/team/vaibhav.jpg' %}"></div>
+			  <div class="card six"><img src="{% static 'index/img/team/debalina.jpg' %}"></div>
+			  <div class="card seven"><img src="{% static 'index/img/team/utpal.jpg' %}"></div>
+			  <div class="card eight"><img src="{% static 'index/img/team/sambit.jpg' %}"></div>
+			  <div class="card nine"><img src="{% static 'index/img/team/raktim.jpg' %}"></div>
+			  <div class="card ten"><img src="{% static 'index/img/team/amitava.jpg' %}"></div>
+			  <div class="card eleven"><img src="{% static 'index/img/team/nitin.jpg' %}"></div>
+			  <div class="card eight"><img src="{% static 'index/img/team/sabir.jpg' %}"></div>
+			  <div class="card nine"><img src="{% static 'index/img/team/ashutosh.jpg' %}"></div>
+			  <div class="card ten"><img src="{% static 'index/img/team/avinash.jpg' %}"></div>
+			  <div class="card eleven"><img src="{% static 'index/img/team/tiasa.jpg' %}"></div>
+			  <div class="card twelve"><img src="{% static 'index/img/team/akhilesh.jpg' %}"></div>
+			  <div class="card thirteen"><img src="{% static 'index/img/team/pragati.jpg' %}"></div>
+			  <div class="card fourteen"><img src="{% static 'index/img/team/sonali.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/bijay.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/brijesh.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/satyabrata.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/anuska.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/sai.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/kirti.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/rudra.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/shivam.jpg' %}"></div>
+		</div>
+		<div class="page pre-pre-final">
+   			  <div class="card one"><img src="{% static 'index/img/team/avi.jpeg' %}"></div>
+			  <div class="card two"><img src="{% static 'index/img/team/jaideep.jpg' %}"></div>
+			  <div class="card three"><img src="{% static 'index/img/team/saumik.jpg' %}"></div>
+			  <div class="card four"><img src="{% static 'index/img/team/goyan.jpg' %}"></div>
+			  <div class="card five"><img src="{% static 'index/img/team/anisha.jpg' %}"></div>
+			  <div class="card six"><img src="{% static 'index/img/team/sravan.jpg' %}"></div>
+			  <div class="card seven"><img src="{% static 'index/img/team/suborno.jpg' %}"></div>
+			  <div class="card eight"><img src="{% static 'index/img/team/madhav.jpg' %}"></div>
+			  <div class="card nine"><img src="{% static 'index/img/team/utkarsh.jpg' %}"></div>
+			  <div class="card ten"><img src="{% static 'index/img/team/praveen.jpg' %}"></div>
+			  <div class="card eleven"><img src="{% static 'index/img/team/satveer.jpg' %}"></div>
+			  <div class="card eight"><img src="{% static 'index/img/team/partho.jpg' %}"></div>
+			  <div class="card nine"><img src="{% static 'index/img/team/manthan.jpg' %}"></div>
+			  <div class="card ten"><img src="{% static 'index/img/team/pradyumn.jpg' %}"></div>
+			  <div class="card eleven"><img src="{% static 'index/img/team/chinta.jpg' %}"></div>
+			  <div class="card twelve"><img src="{% static 'index/img/team/toney.jpg' %}"></div>
+			  <div class="card thirteen"><img src="{% static 'index/img/team/darpan.jpg' %}"></div>
+			  <div class="card fourteen"><img src="{% static 'index/img/team/nidhi.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/prajat.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/dayal.jpg' %}"></div>
+		</div>
+		<div class="page baja">
+			  <div class="card one"><img src="{% static 'index/img/team/prashant.jpg' %}"></div>
+			  <div class="card two"><img src="{% static 'index/img/team/farid.jpg' %}"></div>
+			  <div class="card three"><img src="{% static 'index/img/team/sabir.jpg' %}"></div>
+			  <div class="card four"><img src="{% static 'index/img/team/jana.jpg' %}"></div>
+			  <div class="card five"><img src="{% static 'index/img/team/aby.jpg' %}"></div>
+			  <div class="card six"><img src="{% static 'index/img/team/gowt.jpg' %}"></div>
+			  <div class="card seven"><img src="{% static 'index/img/team/nitin.jpg' %}"></div>
+			  <div class="card eight"><img src="{% static 'index/img/team/sreekar.jpg' %}"></div>
+			  <div class="card nine"><img src="{% static 'index/img/team/anvesh.jpg' %}"></div>
+			  <div class="card ten"><img src="{% static 'index/img/team/aniket.jpg' %}"></div>
+			  <div class="card eleven"><img src="{% static 'index/img/team/nilanjan.jpg' %}"></div>
+			  <div class="card eight"><img src="{% static 'index/img/team/pavan.jpg' %}"></div>
+			  <div class="card nine"><img src="{% static 'index/img/team/dileep.jpg' %}"></div>
+			  <div class="card ten"><img src="{% static 'index/img/team/akhilesh.jpg' %}"></div>
+			  <div class="card eleven"><img src="{% static 'index/img/team/tumati.jpg' %}"></div>
+			  <div class="card twelve"><img src="{% static 'index/img/team/manideep.jpg' %}"></div>
+			  <div class="card thirteen"><img src="{% static 'index/img/team/shounak.jpg' %}"></div>
+			  <div class="card fourteen"><img src="{% static 'index/img/team/ashok.jpg' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/user.png' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/user.png' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/user.png' %}"></div>
+			  <div class="card fifteen"><img src="{% static 'index/img/team/user.png' %}"></div>
+
+		</div>
+
+
+	</div>
+      </div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $('.prefinal-btn').click(function(){
+    $('.page').removeClass("active").fadeOut(500)
+    $('.pre-final').addClass("active").fadeIn(500)
+    $('.page .card').removeClass("animation")
+    $('.pre-final .card').addClass("animation").fadeIn(500)
+  })
+
+
+</script>
+
+<script type="text/javascript">
+  $('.preprefinal-btn').click(function(){
+    $('.page').removeClass("active").fadeOut(500)
+    $('.pre-pre-final').addClass("active").fadeIn(500)
+    $('.page .card').removeClass("animation")
+    $('.pre-pre-final .card').addClass("animation").fadeIn(500)
+  })
+
+
+</script>
+<script type="text/javascript">
+  $('.final-btn').click(function(){
+    $('.page').removeClass("active").fadeOut(500)
+    $('.final').addClass("active").fadeIn(500)
+    $('.page .card').removeClass("animation")
+    $('.final .card').addClass("animation").fadeIn(500)
+  })
+
+
+
+</script>
+<script type="text/javascript">
+  $('.baja-btn').click(function(){
+    $('.page').removeClass("active").fadeOut(500)
+    $('.baja').addClass("active").fadeIn(500)
+    $('.page .card').removeClass("animation")
+    $('.baja .card').addClass("animation").fadeIn(500)
+  })
+
+
+
+</script>
+<script type="text/javascript">
+  $(window).ready(function(){
+  var elmnt = document.getElementByClass("page");
+  var x= elmnt.offsetHeight;
+  $('.container').css("height", (x+"px"));
+})
+</script>
+<script type="text/javascript">
+  if(window.matchMedia("(max-width: 700px)").matches)
+  {
+    $('.final').css("grid-template-columns","1fr 1fr");
+  }
+</script>
+    <!-- Footer -->
+    <footer>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <span class="copyright">Copyright &copy; Sae-NIT Durgapur 2018</span>
+    </div>
+
+    <div class="col-md-4">
+    </div>
+
+  <div class="col-md-4">
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/SAENITD/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+         <li class="list-inline-item">
+          <a href="mailto:sae.nitdgp1@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </footer>
+{% block content %}
+
+	{% endblock %}
+
+	<br>
+
+	<!-- Footer -->
+
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="{% static 'index/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'index/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'index/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'index/vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'index/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'index/js/agency.min.js' %}"></script>
