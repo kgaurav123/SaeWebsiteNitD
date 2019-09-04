@@ -6,3 +6,5 @@ def events(request):
     return render(request,'index/events.html',{})
 def allteam(request):
     return render(request,'index/allteam.html',{})
+def baja(request):
+    return render(request,'index/baja.html',{})

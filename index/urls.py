@@ -6,7 +6,7 @@ urlpatterns = [
     path('events',views.events,name='events'),
 
     path('allteam/',views.allteam,name='allteam'),
-   
+   path('baja/',views.baja,name='baja'),
 
     ]
 #from django.conf.urls import url
