@@ -65,6 +65,36 @@
             padding-bottom: 10px;
             padding-top: 5px;
         }
+        @media only screen and (max-device-width : 600px){
+            #a,#b,#c,#d,#e,#f{
+            padding:5vw 0;
+            border-radius:100%;
+            margin:8vw 3vw 6vw 0;
+            }
+            #a h5,#b h5,#c h5,#d h5,#e h5,#f h6{
+            display: none;
+            }
+            .fas, .fab{
+                font-size: 8vw;;
+            }
+            #AllTeamMembers{
+                padding-bottom: 2vw;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            #a,#b,#c,#d,#e,#f{
+            padding:50px 18px;
+            border-radius:100%;
+            margin:8vw 1vw 6vw 0;
+            }
+            .fas, .fab{
+                font-size: 2vw;;
+            }
+            .toolbar{
+                margin: 0 15vw 0 15vw;;
+            }
+        }
     </style>
     <script>
         function myFunction1() {
@@ -78,6 +108,8 @@
             document.getElementById("b").style.backgroundColor = "#fec810";
             document.getElementById("c").style.backgroundColor = "#fec810";
             document.getElementById("d").style.backgroundColor = "#fec810";
+            document.getElementById("e").style.backgroundColor = "#fec810";
+            document.getElementById("f").style.backgroundColor = "#fec810";
 
         }
 
@@ -92,6 +124,8 @@
             document.getElementById("b").style.backgroundColor = "lightyellow";
             document.getElementById("c").style.backgroundColor = "#fec810";
             document.getElementById("d").style.backgroundColor = "#fec810";
+            document.getElementById("e").style.backgroundColor = "#fec810";
+            document.getElementById("f").style.backgroundColor = "#fec810";
 
         }
 
@@ -106,6 +140,8 @@
             document.getElementById("b").style.backgroundColor = "#fec810";
             document.getElementById("c").style.backgroundColor = "lightyellow";
             document.getElementById("d").style.backgroundColor = "#fec810";
+            document.getElementById("e").style.backgroundColor = "#fec810";
+            document.getElementById("f").style.backgroundColor = "#fec810";
 
         }
 
@@ -120,6 +156,8 @@
             document.getElementById("b").style.backgroundColor = "#fec810";
             document.getElementById("c").style.backgroundColor = "#fec810";
             document.getElementById("d").style.backgroundColor = "lightyellow";
+            document.getElementById("e").style.backgroundColor = "#fec810";
+            document.getElementById("f").style.backgroundColor = "#fec810";
         }
 
         function myFunction5() {
@@ -132,7 +170,9 @@
             document.getElementById("a").style.backgroundColor = "#fec810";
             document.getElementById("b").style.backgroundColor = "#fec810";
             document.getElementById("c").style.backgroundColor = "#fec810";
-            document.getElementById("d").style.backgroundColor = "lightyellow";
+            document.getElementById("d").style.backgroundColor = "#fec810";
+            document.getElementById("e").style.backgroundColor = "lightyellow";
+            document.getElementById("f").style.backgroundColor = "#fec810";
         }
               function myFunction6() {
             document.getElementById("fnl").style.display = "none";
@@ -144,7 +184,9 @@
             document.getElementById("a").style.backgroundColor = "#fec810";
             document.getElementById("b").style.backgroundColor = "#fec810";
             document.getElementById("c").style.backgroundColor = "#fec810";
-            document.getElementById("d").style.backgroundColor = "lightyellow";
+            document.getElementById("d").style.backgroundColor = "#fec810";
+            document.getElementById("e").style.backgroundColor = "#fec810";
+            document.getElementById("f").style.backgroundColor = "lightyellow";
         }
     </script>
 
@@ -192,18 +234,22 @@
 
 
     <section id="AllTeamMembers">
-        <div class="container">
+        {% comment %} <div class="container"> {% endcomment %}
 
             <!--  <div class="btn-toolbar" role="group" aria-label="Basic example" > -->
-            <div class="btn-toolbar">
+            
+                <div class="toolbar" >
+                <div class="container-fluid" style="margin: 0 0;">
+                    <div class="row">
+                    <a class="btn btn-primary btn-md col" onclick="myFunction6()" id="f" style ="margin-left: 0;" ><i class="fas fa-users "><h6>Office Bearers</h6></i></a>
 
-                <a class="btn btn-primary btn-md" onclick="myFunction1()" id="a" class="btn" style="padding: 20px; margin:20px;  ">MANAGEMENT</a>
-                <a class="btn btn-primary btn-md" onclick="myFunction2()" id="b" style="padding: 20px; margin:20px;">TECHNICAL</a>
-                <a class="btn btn-primary btn-md" onclick="myFunction3()" id="c" style="padding: 20px; margin:20px;">WEB DEVELOPMENT</a>
-                <a class="btn btn-primary btn-md" onclick="myFunction4()" id="d" style="padding: 20px; margin:20px;">GRAPHICS DESIGN</a>
-                <a class="btn btn-primary btn-md" onclick="myFunction5()" id="e" style="padding: 20px; margin:20px;">BAJA MEMBERS</a>
-                <a class="btn btn-primary btn-md" onclick="myFunction6()" id="f" style="padding: 20px; margin:20px;margin-left: 420px;">OFFICE BEARERS</a>
-
+                    <a class="btn btn-primary btn-md col" onclick="myFunction1()" id="a" ><i class="fas fa-tasks "><br><h6>Management</h6></i></a>
+                    <a class="btn btn-primary btn-md col" onclick="myFunction2()" id="b" style="padding: 50px 35px;"><i class="fas fa-cogs "><h6>Technical    </h6></i></a>
+                    <a class="btn btn-primary btn-md col" onclick="myFunction3()" id="c" style="padding: 50px 40px;"><i class="fab fa-chrome"><h6>WebD</h6></i></a>
+                    <a class="btn btn-primary btn-md col" onclick="myFunction4()" id="d" style="padding: 50px 35px;"><i class="fas fa-pen-nib"><h6>Graphics</h6></i></a>
+                    <a class="btn btn-primary btn-md col" onclick="myFunction5()" id="e" style="margin-right:0;padding: 50px 35px;"  ><i class="fas fa-car"><h5>BAJA</h5></i></a>
+                    </div>
+                
 
             </div>
 
