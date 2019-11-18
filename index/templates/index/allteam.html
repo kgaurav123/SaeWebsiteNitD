@@ -69,10 +69,10 @@
             #a,#b,#c,#d,#e,#f{
             padding:5vw 0;
             border-radius:100%;
-            margin:8vw 3vw 6vw 0;
+            margin:8vw 0 6vw 0;
             }
-            #a h5,#b h5,#c h5,#d h5,#e h5,#f h6{
-            display: none;
+            #a h6,#b h6,#c h6,#d h6,#e h5,#f h6{
+                display: none;
             }
             .fas, .fab{
                 font-size: 8vw;;
@@ -238,7 +238,7 @@
 
             <!--  <div class="btn-toolbar" role="group" aria-label="Basic example" > -->
             
-                <div class="toolbar" >
+                {% comment %} <div class="toolbar" >
                 <div class="container-fluid" style="margin: 0 0;">
                     <div class="row">
                     <a class="btn btn-primary btn-md col" onclick="myFunction6()" id="f" style ="margin-left: 0;" ><i class="fas fa-users "><h6>Office Bearers</h6></i></a>
@@ -251,8 +251,33 @@
                     </div>
                 
 
-            </div>
+                </div> {% endcomment %}
 
+                <div class="container-fluid">
+                    <div class="row" style="padding:1vw;">
+                        <div class = "col-2 col-sm-4 " style="padding:1vw;" >
+                            <a class="btn btn-primary btn-md col" onclick="myFunction6()" id="f" style ="margin-left: 0;" ><i class="fas fa-users "><h6>Office Bearers</h6></i></a>
+                        </div>
+                        <div class = "col-2 col-sm-4" style="padding:1vw;">
+                            <a class="btn btn-primary btn-md col" onclick="myFunction1()" id="a" ><i class="fas fa-tasks "><br><h6>Management</h6></i></a>
+
+                        </div>
+                        <div class = "col-2 col-sm-4" style="padding:1vw;">
+                            <a class="btn btn-primary btn-md col" onclick="myFunction2()" id="b" ><i class="fas fa-cogs "><h6>Technical    </h6></i></a>
+                        </div>
+                        <div class = "col-2 col-sm-4" style="padding:1vw;">
+                            <a class="btn btn-primary btn-md col" onclick="myFunction3()" id="c" ><i class="fab fa-chrome"><h6>WebD</h6></i></a>
+                        </div>
+                        <div class = "col-2 col-sm-4" style="padding:1vw;">
+                            <a class="btn btn-primary btn-md col" onclick="myFunction4()" id="d" ><i class="fas fa-pen-nib"><h6>Graphics</h6></i></a>
+                        </div>
+                        <div class = "col-2 col-sm-4" style="padding:1vw;">
+                            <a class="btn btn-primary btn-md col" onclick="myFunction5()" id="e" ><i class="fas fa-car"><h5>BAJA</h5></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
             <div id="team" class="section scrollspy" style="background-color:">
 
                 <br>
