@@ -6,14 +6,14 @@
             background-color: transparent;
         }
     }
-    
+
     @media screen and (min-width:250px) and (max-width:485px) {
         #homeimg {
             height: 400px;
             padding-top: 117px;
         }
     }
-    
+
     @media screen and (min-width:486px) and (max-width:770px) {
         #homeimg {
             height: 625px;
@@ -21,7 +21,7 @@
             padding-left: 35px;
         }
     }
-    
+
     @media screen and (min-width:771px) {
         #homeimg {
             height: 717px;
@@ -137,6 +137,7 @@
             <div class="col-lg-12">
                 <ul class="timeline">
                     <li>
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal11">
                         <div class="timeline-image">
                         </div>
                         <div class="timeline-panel">
@@ -149,42 +150,49 @@
                             <div class="timeline-body">
                                 <br/>
 
-                                <h2><a class="portfolio-link" data-toggle="modal" href="#portfolioModal11"> Aavishkar </a></h2>
+                                <h2> Aavishkar</h2>
                                 <p class="text-muted"> Know more about the official techinal fest of NIT Durgapur</p>
 
                             </div>
                         </div>
+                        </a>
                     </li>
 
 
 
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
+
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">  <div class="timeline-image">
+
                         </div>
+                          </a>
                         <div class="timeline-panel">
 
                             <div class="timeline-body">
                                 <br>
-
-                                <h2><a class="portfolio-link" data-toggle="modal" href="#portfolioModal12"> Baja SAE </a></h2>
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">
+                                <h2> Baja SAE </h2></a>
                                 <p class="text-muted"> Get a brief about the achievements of NDORS </p>
 
 
                             </div>
                         </div>
+
                     </li>
 
                     <li>
+                      <a href="/events">
                         <div class="timeline-image">
                         </div>
                         <div class="timeline-panel">
 
                             <div class="timeline-body">
                                 <br>
-                                <h2><a href="/events"> Events </a></h2>
+                                <h2>Events </h2>
                                 <p class="text-muted"> Get the details of events and workshops organiseed by SAE NIT Durgapur</p>
                             </div>
                         </div>
+                        </a>
                     </li>
 
                     <!--<li class="timeline-inverted">
@@ -288,7 +296,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="{% static 'index/img/team/shashank.jpg' %}" alt="">
+                    <img class="mx-auto rounded-circle" src="{% static 'index/img/team/shashank.jpeg' %}" alt="">
                     <h4>Shashank<br>Nayak</h4>
                     <p class="text-muted">General Secretary</p>
                     <ul class="list-inline social-buttons">
@@ -351,7 +359,7 @@
 			</div>-->
         <br>
         <div class="col-lg-8 mx-auto text-center">
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/allteam/">Meet All Members</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/allteam">Meet All Members</a>
         </div>
     </div>
 </section>
@@ -392,8 +400,7 @@
             <div class="col-lg-8 mx-auto text-center">
                 <h2 class="section-heading">Get In Touch!</h2>
                 <hr class="my-4">
-                <p class="mb-5" style="color:white">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-            </div>
+                      </div>
         </div>
         <br>
         <div class="row">

@@ -31,15 +31,15 @@
         #fnl {
             display: block;
         }
-        
+
         #snr {
             display: none;
         }
-        
+
         #jnr {
             display: none;
         }
-        
+
         #baja {
             display: none;
         }
@@ -97,12 +97,31 @@
         }
     </style>
     <script>
+      function myFunction6() {
+    document.getElementById("fnl").style.display = "none";
+    document.getElementById("snr").style.display = "none";
+    document.getElementById("baja1").style.display = "none";
+    document.getElementById("jnr").style.display = "none";
+    document.getElementById("baja").style.display = "none";
+      document.getElementById("gra").style.display = "none";
+      document.getElementById("off").style.display = "block";
+
+    document.getElementById("a").style.backgroundColor = "#fec810";
+    document.getElementById("b").style.backgroundColor = "#fec810";
+    document.getElementById("c").style.backgroundColor = "#fec810";
+    document.getElementById("d").style.backgroundColor = "#fec810";
+    document.getElementById("e").style.backgroundColor = "#fec810";
+    document.getElementById("f").style.backgroundColor = "lightyellow";
+}
+
         function myFunction1() {
             document.getElementById("fnl").style.display = "block";
             document.getElementById("snr").style.display = "none";
             document.getElementById("fnl1").style.display = "none";
             document.getElementById("jnr").style.display = "none";
             document.getElementById("baja").style.display = "none";
+            document.getElementById("gra").style.display = "none";
+
             document.getElementById("off").style.display = "none";
             document.getElementById("a").style.backgroundColor = "lightyellow";
             document.getElementById("b").style.backgroundColor = "#fec810";
@@ -119,6 +138,7 @@
             document.getElementById("snr1").style.display = "none";
             document.getElementById("jnr").style.display = "none";
             document.getElementById("baja").style.display = "none";
+            document.getElementById("gra").style.display = "none";
             document.getElementById("off").style.display = "none";
             document.getElementById("a").style.backgroundColor = "#fec810";
             document.getElementById("b").style.backgroundColor = "lightyellow";
@@ -135,6 +155,7 @@
             document.getElementById("jnr1").style.display = "none";
             document.getElementById("jnr").style.display = "block";
             document.getElementById("baja").style.display = "none";
+            document.getElementById("gra").style.display = "none";
             document.getElementById("off").style.display = "none";
             document.getElementById("a").style.backgroundColor = "#fec810";
             document.getElementById("b").style.backgroundColor = "#fec810";
@@ -148,10 +169,11 @@
         function myFunction4() {
             document.getElementById("fnl").style.display = "none";
             document.getElementById("snr").style.display = "none";
-            document.getElementById("snr1").style.display = "block";
+
             document.getElementById("jnr").style.display = "none";
             document.getElementById("baja").style.display = "none";
              document.getElementById("off").style.display = "none";
+             document.getElementById("gra").style.display = "block";
             document.getElementById("a").style.backgroundColor = "#fec810";
             document.getElementById("b").style.backgroundColor = "#fec810";
             document.getElementById("c").style.backgroundColor = "#fec810";
@@ -165,6 +187,7 @@
             document.getElementById("snr").style.display = "none";
             document.getElementById("baja1").style.display = "none";
             document.getElementById("jnr").style.display = "none";
+            document.getElementById("gra").style.display = "none";
             document.getElementById("baja").style.display = "block";
              document.getElementById("off").style.display = "none";
             document.getElementById("a").style.backgroundColor = "#fec810";
@@ -174,20 +197,7 @@
             document.getElementById("e").style.backgroundColor = "lightyellow";
             document.getElementById("f").style.backgroundColor = "#fec810";
         }
-              function myFunction6() {
-            document.getElementById("fnl").style.display = "none";
-            document.getElementById("snr").style.display = "none";
-            document.getElementById("baja1").style.display = "none";
-            document.getElementById("jnr").style.display = "none";
-            document.getElementById("baja").style.display = "none";
-            document.getElementById("off").style.display = "block";
-            document.getElementById("a").style.backgroundColor = "#fec810";
-            document.getElementById("b").style.backgroundColor = "#fec810";
-            document.getElementById("c").style.backgroundColor = "#fec810";
-            document.getElementById("d").style.backgroundColor = "#fec810";
-            document.getElementById("e").style.backgroundColor = "#fec810";
-            document.getElementById("f").style.backgroundColor = "lightyellow";
-        }
+
     </script>
 
 
@@ -195,7 +205,7 @@
 
 </head>
 
-<body id="home">
+<body id="home" onload="myFunction6()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -225,6 +235,9 @@
                         <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="/baja">SAE BAJA</a>
+                  </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/#contact">Contact Us</a>
                     </li>
                 </ul>
@@ -237,7 +250,7 @@
         {% comment %} <div class="container"> {% endcomment %}
 
             <!--  <div class="btn-toolbar" role="group" aria-label="Basic example" > -->
-            
+
                 {% comment %} <div class="toolbar" >
                 <div class="container-fluid" style="margin: 0 0;">
                     <div class="row">
@@ -249,14 +262,14 @@
                     <a class="btn btn-primary btn-md col" onclick="myFunction4()" id="d" style="padding: 50px 35px;"><i class="fas fa-pen-nib"><h6>Graphics</h6></i></a>
                     <a class="btn btn-primary btn-md col" onclick="myFunction5()" id="e" style="margin-right:0;padding: 50px 35px;"  ><i class="fas fa-car"><h5>BAJA</h5></i></a>
                     </div>
-                
+
 
                 </div> {% endcomment %}
 
                 <div class="container-fluid">
                     <div class="row" style="padding:1vw;">
                         <div class = "col-2 " style="padding:1vw;" >
-                            <a class="btn btn-primary btn-md col" onclick="myFunction6()" id="f" style ="margin-left: 0;" ><i class="fas fa-users "><h6>Office Bearers</h6></i></a>
+                            <a class="btn btn-primary btn-md col" onclick="myFunction6()" id="f" ><i class="fas fa-users "><h6>Office Bearers</h6></i></a>
                         </div>
                         <div class = "col-2 " style="padding:1vw;">
                             <a class="btn btn-primary btn-md col" onclick="myFunction1()" id="a" ><i class="fas fa-tasks "><br><h6>Management</h6></i></a>
@@ -272,7 +285,7 @@
                             <a class="btn btn-primary btn-md col" onclick="myFunction4()" id="d" ><i class="fas fa-pen-nib"><h6>Graphics</h6></i></a>
                         </div>
                         <div class = "col-2 " style="padding:1vw;">
-                            <a class="btn btn-primary btn-md col" onclick="myFunction5()" id="e" ><i class="fas fa-car"><h5>BAJA</h5></i></a>
+                            <a class="btn btn-primary btn-md col" onclick="myFunction5()" id="e" ><i class="fas fa-car"><h5>Team NDORS</h5></i></a>
                         </div>
 
                     </div>
@@ -281,6 +294,209 @@
             <div id="team" class="section scrollspy" style="background-color:">
 
                 <br>
+
+                <section id="default">
+                    <div class="final" id="off">
+
+                        <h4 style="text-align: center;">OFFICE <span style="color: #fed136">BEARERS</span></h4>
+                        <hr width="6%" style="height: 2px;background-color: #fed136;"><br><br>
+                        <div class="col-lg-8 mx-auto text-center" id="off1">
+                            <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction4()">All BAJA MEMBERS</a>
+                  --></div>
+
+                        <div class="container" style="background-color: ">
+                            <br><br>
+                            <div class="row">
+                                  <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/dibyadipta.jpg' %}" id="imgframe">
+                                        <h6>Dibyadipta Roy</h6><p><i>(President)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/shashank.jpeg' %}" id="imgframe">
+                                        <h6>Shashank Nayak</h6><p><i>(General Secretary)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/anuska.jpg' %}" id="imgframe">
+                                        <h6>Anushka Mondal</h6><p><i>(Convener)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/partha.jpg' %}" id="imgframe">
+                                        <h6>Parth Sarathi Ghosh</h6><p><i>(Treasurer)</i></p>
+                                    </div>
+                                </div>
+                                 <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/sonali.jpg' %}" id="imgframe">
+                                        <h6>Sonali Sweta Padma</h6><p><i>(Vice President)</i></p>
+                                    </div>
+                                </div>
+                             <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/amitava.jpg' %}" id="imgframe">
+                                        <h6>Amitava Das</h6><p><i>(Vice President)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/shivam.jpg' %}" id="imgframe">
+                                        <h6>Shivam Singh</h6><p><i>(Tech Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/avinash.jpg' %}" id="imgframe">
+                                        <h6>Avinash Kumar</h6><p><i>(Tech Head)</i></p>
+                                    </div>
+                                </div>
+                                    <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/sai.jpg' %}" id="imgframe">
+                                        <h6>Sai Akash</h6><p><i>(Design Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/sambit.jpg' %}" id="imgframe">
+                                        <h6>Sambit Biswas</h6><p><i>(Design Head)</i></p>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/kirti.jpg' %}" id="imgframe">
+                                        <h6>Kirti Gupta</h6><p><i>(Web D)</i></p>
+                                    </div>
+                                </div>
+                                    <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/pragati.jpg' %}" id="imgframe">
+                                        <h6>Pragati Singh</h6><p><i>(Publicity Head)</i></p>
+                                    </div>
+                                </div>
+
+                                 <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/rudra.jpg' %}" id="imgframe">
+                                        <h6>Rudra Banarjee<br></h6><p><i>(Creative Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/ashutosh.jpg' %}" id="imgframe">
+                                        <h6>Ashutosh Bharti</h6><p><i>(Creative Head)</i></p>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/shrish.jpg' %}" id="imgframe">
+                                        <h6>Shrish<br></h6><p><i>(Sponsorship Head)</i></p>
+                                    </div>
+                                </div>
+                                 <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/tiasa.jpg' %}" id="imgframe">
+                                        <h6>Tiasa Das<br></h6><p><i>(sponsorship Head)</i></p>
+                                    </div>
+                                </div>
+                                 <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/satyabrata.jpg' %}" id="imgframe">
+                                        <h6>Satyabrata Pal<br></h6><p style="font-size: 14px"><i>(Accomodation,travel and Hospitality Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/nitin.jpg' %}" id="imgframe">
+                                        <h6>Nitin Kumar Singh</h6><p><i>(Baja coordinator)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/bijay.jpg' %}" id="imgframe">
+                                        <h6>Bijay Kr. Barnwal</h6><p><i>(Workshop Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/raktim.jpg' %}" id="imgframe">
+                                        <h6>Raktim Surya Mondal</h6><p><i>(Workshop Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/sabir.jpg' %}" id="imgframe">
+                                        <h6>Sabir Alam</h6><p><i>(Events Head)</i></p>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/akhilesh.jpg' %}" id="imgframe">
+                                        <h6>T. Akhileshwara Rao</h6><p><i>(Events Head)</i></p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/vaibhav.jpg' %}" id="imgframe">
+                                        <h6>Vaibhav Mishra</h6><p style="font-size: 14px"><i>(Events and Fest coordinator)</i></p>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/utpal.jpg' %}" id="imgframe">
+                                        <h6>Utpal Singh</h6><p style="font-size: 14px"><i>(Events and Fest coordinator)</i></p>
+                                    </div>
+                                </div>
+
+
+
+                                  <div class="col s12 m6 l3">
+                                    <div class="team-des">
+
+                                        <img class="activator" src="{% static 'index/img/team/brijesh.jpg' %}" id="imgframe">
+                                        <h6>Brijesh Tamang<br></h6><p><i>(Logistic Head)</i></p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                </div>
+
+                            </div>
+                        </section>
 
 
                 <div class="col-lg-8 mx-auto text-center" id="fnl1">
@@ -296,7 +512,7 @@
                 <div class="col-md-4 profile-pic text-center">
                     <div class="team-des">
 
-                        <img class="activator" src="{% static 'index/img/team/shashank.jpg' %}" id="imgframe">
+                        <img class="activator" src="{% static 'index/img/team/shashank.jpeg' %}" id="imgframe">
                         <h6>Shashank Nayak</h6>
                     </div>
                 </div>
@@ -399,7 +615,7 @@
                         <div class="col-md-4 profile-pic text-center">
                             <div class="team-des">
                                 <a href="./saurabh.html"><img class="activator" src="{% static 'index/img/team/toney.jpg' %}"></a>
-                                <h6>TONEY MANAUL</h6>
+                                <h6>TONEY MANALIL</h6>
                             </div>
                         </div>
                         <div class="col-md-4 profile-pic text-center">
@@ -411,7 +627,7 @@
                         <div class="col-md-4 profile-pic text-center">
                             <div class="team-des">
                                 <a href="./saurabh.html"><img class="activator" src="{% static 'index/img/team/sravan.jpg' %}"></a>
-                                <h6>SHARVAN GAUDE</h6>
+                                <h6>SRAVAN GANDE</h6>
                             </div>
                         </div>
                         <div class="col-md-4 profile-pic text-center">
@@ -749,7 +965,7 @@
                     <div class="team-des">
 
                         <img class="activator" src="{% static 'index/img/team/akhilesh.jpg' %}" id="imgframe">
-                        <h6>T. akhileshwar Rao</h6>
+                        <h6>T. Akhileshwara Rao</h6>
                     </div>
                 </div>
                 <div class="col-md-4 profile-pic text-center">
@@ -770,14 +986,14 @@
             <br><br>
             <div class="row">
                 <!--  <h4 style="text-align: center;">Junior Fest Co-ordinators</h4>-->
-
                 <div class="col-md-4 profile-pic text-center">
-                    <div class="team-des">
+                   <div class="team-des">
 
-                        <img class="activator" src="{% static 'index/img/team/pradyumn.jpg' %}" id="imgframe">
-                        <h6>Pradyumn Singh</h6>
-                    </div>
-                </div>
+                       <img class="activator" src="{% static 'index/img/team/soumik.jpg' %}" id="imgframe">
+                       <h6>Soumik Paul</h6>
+                   </div>
+               </div>
+
                  <div class="col-md-4 profile-pic text-center">
                     <div class="team-des">
 
@@ -807,20 +1023,16 @@
                         <h6>Suborono Gupta</h6>
                     </div>
                 </div>
-                 <div class="col-md-4 profile-pic text-center">
-                    <div class="team-des">
 
-                        <img class="activator" src="{% static 'index/img/team/saumik.jpg' %}" id="imgframe">
-                        <h6>Soumik Paul</h6>
-                    </div>
-                </div>
-                <div class="col-md-12 profile-pic text-center">
-                    <div class="team-des">
+                                <div class="col-md-4 profile-pic text-center">
+                                    <div class="team-des">
 
-                        <img class="activator" src="{% static 'index/img/team/alok.jpg' %}" id="imgframe">
-                        <h6>Alok Kumar</h6>
-                    </div>
-                </div>
+                                        <img class="activator" src="{% static 'index/img/team/pradyumn.jpg' %}" id="imgframe">
+                                        <h6>Pradyumn Singh</h6>
+                                    </div>
+                                </div>
+
+
             </div>
 
         <h4 style="text-align: center;">SECOND <span style="color: #fed136">YEAR</span></h4>
@@ -1002,210 +1214,104 @@
         </div>
     </div>
     </section>
-    <hr>
-     <div class="col-lg-8 mx-auto text-center" id="off1">
+    <section id="webd">
+        <div class="col-lg-8 mx-auto text-center" id="jnr1">
         <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction1()">All Final Year Members</a>-->
     </div>
-    <div class="final" id="off">
 
-        <h4 style="text-align: center;">OFFICE <span style="color: #fed136">BEARERS</span></h4>
-        <hr width="6%" style="height: 2px;background-color: #fed136;"><br><br>
-        <div class="col-lg-8 mx-auto text-center" id="off1">
-            <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction4()">All BAJA MEMBERS</a>
-  --></div>
+
+    <div class="final" id="gra">
+        <h4 style="text-align: center;">GRAPHICS <span style="color: #fed136">DESIGNERS</span></h4>
+         <h4 style="text-align: center;">FINAL <span style="color: #fed136">YEAR</span></h4>
+        <hr width="4%" style="height: 2px;background-color: #fed136;"><br><br>
+        <div class="col-lg-8 mx-auto text-center" id="jnr1">
+            <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction3()">All Junior Fest Coordinators</a>
+-->
+        </div>
 
         <div class="container" style="background-color: ">
             <br><br>
             <div class="row">
-                  <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/dibyadipta.jpg' %}" id="imgframe">
-                        <h6>Dibyadipta Roy</h6><p><i>(President)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/shashank.jpg' %}" id="imgframe">
-                        <h6>Shashank Nayak</h6><p><i>(General Secretary)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/anuska.jpg' %}" id="imgframe">
-                        <h6>Anushka Mondal</h6><p><i>(Convener)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/partha.jpg' %}" id="imgframe">
-                        <h6>Parth Sarathi Ghosh</h6><p><i>(Treasurer)</i></p>
-                    </div>
-                </div>
-                 <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/sonali.jpg' %}" id="imgframe">
-                        <h6>Sonali Sweta Padma</h6><p><i>(Vice President)</i></p>
-                    </div>
-                </div>
-             <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/amitava.jpg' %}" id="imgframe">
-                        <h6>Amitava Das</h6><p><i>(Vice President)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/shivam.jpg' %}" id="imgframe">
-                        <h6>Shivam Singh</h6><p><i>(Tech Head)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/avinash.jpg' %}" id="imgframe">
-                        <h6>Avinash Kumar</h6><p><i>(Tech Head)</i></p>
-                    </div>
-                </div>
-                    <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/sai.jpg' %}" id="imgframe">
-                        <h6>Sai Akash</h6><p><i>(Design Head)</i></p>
-                    </div>
-                </div>
                 <div class="col s12 m6 l3">
                     <div class="team-des">
 
                         <img class="activator" src="{% static 'index/img/team/sambit.jpg' %}" id="imgframe">
-                        <h6>Sambit Biswas</h6><p><i>(Design Head)</i></p>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/kirti.jpg' %}" id="imgframe">
-                        <h6>Kirti Gupta</h6><p><i>(Web D)</i></p>
-                    </div>
-                </div>
-                    <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/pragati.jpg' %}" id="imgframe">
-                        <h6>Pragati Singh</h6><p><i>(Publicity Head)</i></p>
-                    </div>
-                </div>
-
-                 <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/rudra.jpg' %}" id="imgframe">
-                        <h6>Rudra Banarjee<br></h6><p><i>(Creative Head)</i></p>
+                        <h6>Sambit Biswas</h6><br>
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
                     <div class="team-des">
 
-                        <img class="activator" src="{% static 'index/img/team/ashutosh.jpg' %}" id="imgframe">
-                        <h6>Ashutosh Bharti</h6><p><i>(Creative Head)</i></p>
+                        <img class="activator" src="{% static 'index/img/team/sai.jpg' %}" id="imgframe">
+                        <h6>Sai Akash</h6><br>
                     </div>
                 </div>
+            </div>
+        </div>
 
+
+        <h4 style="text-align: center;">THIRD <span style="color: #fed136">YEAR</span></h4>
+        <hr width="4%" style="height: 2px;background-color: #fed136;"><br><br>
+        <div class="col-lg-8 mx-auto text-center" id="jnr1">
+            <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction3()">All Junior Fest Coordinators</a>
+--></div>
+
+        <div class="container" style="background-color: ">
+            <br><br>
+            <div class="row">
+                <!--  <h4 style="text-align: center;">Junior Fest Co-ordinators</h4>-->
                 <div class="col s12 m6 l3">
                     <div class="team-des">
 
-                        <img class="activator" src="{% static 'index/img/team/shrish.jpg' %}" id="imgframe">
-                        <h6>Shrish<br></h6><p><i>(Sponsorship Head)</i></p>
-                    </div>
-                </div>
-                 <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/tiasa.jpg' %}" id="imgframe">
-                        <h6>Tiasa Das<br></h6><p><i>(sponsorship Head)</i></p>
-                    </div>
-                </div>
-                 <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/satyabrata.jpg' %}" id="imgframe">
-                        <h6>Satyabrata Pal<br></h6><p style="font-size: 14px"><i>(Accomodation,travel and Hospitality Head)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/nitin.jpg' %}" id="imgframe">
-                        <h6>Nitin Kumar Singh</h6><p><i>(Baja coordinator)</i></p>
+                        <img class="activator" src="{% static 'index/img/team/darpan.jpg' %}" id="imgframe">
+                        <h6>Darpan Agrawal</h6><br>
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
                     <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/bijay.jpg' %}" id="imgframe">
-                        <h6>Bijay Kr. Barnwal</h6><p><i>(Workshop Head)</i></p>
+                        <img class="activator" src="{% static 'index/img/team/dayal.jpg' %}" id="imgframe">
+                        <h6>Hritik Dayal Singh</h6><br>
                     </div>
                 </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/raktim.jpg' %}" id="imgframe">
-                        <h6>Raktim Surya Mondal</h6><p><i>(Workshop Head)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/sabir.jpg' %}" id="imgframe">
-                        <h6>Sabir Alam</h6><p><i>(Events Head)</i></p>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/akhilesh.jpg' %}" id="imgframe">
-                        <h6>T. akhileshwar Rao</h6><p><i>(Events Head)</i></p>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/vaibhav.jpg' %}" id="imgframe">
-                        <h6>Vaibhav Mishra</h6><p style="font-size: 14px"><i>(Events and Fest coordinator</i></p>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/utpal.jpg' %}" id="imgframe">
-                        <h6>Utpal Singh</h6><p style="font-size: 14px"><i>(Events and Fest coordinator</i></p>
-                    </div>
-                </div>
-
-
-
-                  <div class="col s12 m6 l3">
-                    <div class="team-des">
-
-                        <img class="activator" src="{% static 'index/img/team/brijesh.jpg' %}" id="imgframe">
-                        <h6>Brijesh Tamang<br></h6><p><i>(Logistic Head)</i></p>
-                    </div>
-                </div>
-
 
             </div>
-</div>
+        </div>
+         <h4 style="text-align: center;">SECOND <span style="color: #fed136">YEAR</span></h4>
+        <hr width="4%" style="height: 2px;background-color: #fed136;"><br><br>
+        <div class="col-lg-8 mx-auto text-center" id="gra">
+            <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction3()">All Junior Fest Coordinators</a>
+-->
+        </div>
 
-            </div>
+        <div class="container" style="background-color: ">
+            <br><br>
+            <div class="row">
+                <!--  <h4 style="text-align: center;">Junior Fest Co-ordinators</h4>-->
+                <div class="col s12 m6 l3">
+                    <div class="team-des">
+
+                        <img class="activator" src="{% static 'index/img/team/vis.jpeg' %}" id="imgframe">
+                        <h6>V. Vishesh</h6><br>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="team-des">
+                        <img class="activator" src="{% static 'index/img/team/Aman.jpeg' %}" id="imgframe">
+                        <h6>Aman Agarwal</h6><br>
+                    </div>
+                </div>
+
+
+            <br><br>
+        </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+     <div class="col-lg-8 mx-auto text-center" id="off1">
+        <!--    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" onclick="myFunction1()">All Final Year Members</a>-->
+    </div>
+
         </div>
    <!----BAjA----->
     <div class="col-lg-8 mx-auto text-center" id="baja1">
